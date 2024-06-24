@@ -12,7 +12,7 @@ Input: nums = [1]
 Output: 1
 Explanation: The subarray [1] has the largest sum 1.
      */
-    public int maxSubArray(int[] nums) {
+    public int maxSubArray(int[] nums){
         int maxSum=Integer.MIN_VALUE,currSum=0;
         for(int num:nums){
             currSum+=num;
