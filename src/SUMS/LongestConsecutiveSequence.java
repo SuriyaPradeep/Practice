@@ -23,15 +23,15 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
         for(int num:nums){
             int left=num-1;
             int right=num+1;
-            while(!set.isEmpty() && set.contains(left)){
+            while(!set.isEmpty() && set.remove(left)){
                 left--;
             }
-            while(!set.isEmpty() && set.contains(right)){
+            while(!set.isEmpty() && set.remove(right)){
                 right++;
             }
             max=Math.max(max,right-left-1);
             if(set.isEmpty()){
-                break;
+                return max;
             }
         }
         return max;
