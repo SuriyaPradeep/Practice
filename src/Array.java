@@ -2,8 +2,6 @@
 In Java, an array is a data structure that allows you to store multiple values of the same type in a single variable.
 Each value is accessed using an index, which represents its position in the array. Arrays in Java are fixed in size,
 meaning once you define the size of an array, it cannot be changed.  The elements of an array are stored in contiguous memory locations.
-
-
  */
 public class Array {
     private int size;
