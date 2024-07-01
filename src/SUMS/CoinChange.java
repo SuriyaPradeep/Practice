@@ -19,7 +19,7 @@ Explanation: 11 = 5 + 5 + 1
         minCoins[0]=0;
         for(int i=1;i<amount+1;i++){
             for(int j=0;j<coins.length;j++){
-                if(i-coins[j]>=0){
+                if(i>=coins[j]){
                     minCoins[i]=Math.min(minCoins[i],1+minCoins[i-coins[j]]);
                 }
             }
